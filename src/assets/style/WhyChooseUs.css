@@ -1,0 +1,421 @@
+.why-choose-section {
+    width: 100%;
+    background-color: white;
+    padding: 40px 16px;
+}
+
+@media (min-width: 640px) {
+    .why-choose-section {
+        padding: 56px 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .why-choose-section {
+        padding: 80px 24px;
+    }
+}
+
+.why-choose-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.why-choose-header {
+    @apply flex items-center justify-between mb-[24px] sm:mb-[32px] md:mb-[36px] lg:mb-[40px] xl:mb-[48px] 2xl:mb-[54px]
+}
+
+
+
+.header-title-primary {
+    color: #9898A7;
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px];
+}
+
+.header-title-secondary {
+    color: #4A4A59;
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px];
+}
+
+.header-title-primary, 
+.header-title-secondary,
+.results-main-title {
+    white-space: nowrap; 
+    @apply text-[18px] sm:text-[24px] md:text-[32px] lg:text-[48px];
+}
+
+@media (max-width: 640px) {
+    .header-left {
+        display: flex;
+        flex-direction: row; 
+        gap: 5px;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+.header-right {
+    max-width: 320px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .header-right {
+        padding-top: 8px;
+    }
+}
+
+.header-description {
+    color: #8B929E;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px];
+}
+
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+/* Security Card */
+.card-security {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 24px 16px;
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+    .card-security {
+        border-radius: 30px;
+        padding: 32px;
+        min-height: 430px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-security {
+        border-radius: 40px;
+        padding: 40px;
+        min-height: 500px;
+    }
+}
+
+.card-security-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    user-select: none;
+}
+
+.card-security-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card-security-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 16px;
+}
+
+.card-security-title {
+    color: #FFF;
+    font-family: 'Geist';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px];
+}
+
+
+.security-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.security-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: white;
+    font-size: 14px;
+    filter: drop-shadow(0 0.5px 1px rgba(0, 0, 0, 0.05));
+}
+
+.security-list-icon {
+    margin-top: 4px;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+    width: 16px;
+    height: 16px;
+}
+
+.security-list-strong {
+    font-weight: 500;
+    color: white;
+}
+
+.security-list-break {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .security-list-break {
+        display: block;
+    }
+}
+
+.card-security-button {
+    position: relative;
+    z-index: 20;
+    width: 60%;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid rgba(203, 203, 203, 0.5);
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top: 8px;
+    display: block;
+}
+
+@media (min-width: 640px) {
+    .card-security-button {
+        font-size: 12px;
+        width: 211px;
+        padding: 10px 28px;
+    }
+}
+
+.card-security-button:hover {
+    background-color: #f9f9f9;
+    transition: background-color 300ms ease;
+}
+
+/* Trust Card */
+.card-trust {
+    border-radius: 32px;
+    background: #F2F3FA;
+    box-shadow: none !important;
+    @apply px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px] py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[25px]; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.card-trust-content {
+    position: relative;
+    z-index: 10;
+}
+
+.card-trust-title {
+    color: #4A4A59;
+    font-family: 'Geist';
+    @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px];
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; 
+}
+
+.trust-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.trust-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #424245;
+    font-size: 14px;
+    font-family: 'Geist';
+}
+
+.trust-list-icon {
+    filter: invert(1);
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+}
+
+.trust-list-strong {
+    font-weight: 600;
+}
+
+.card-trust-button {
+    border-radius: 12px;
+    border: 1px solid rgba(203, 203, 203, 0.50);
+    background: #FFF;
+    color: #4A4A59;
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    letter-spacing: -0.13px;
+    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px] py-[10px] sm:py-[11px] md:py-[12px] lg:py-[13px] xl:py-[14px] mt-[13px] sm:mt-[14px] md:mt-[15px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px];
+}
+
+.card-trust-button:hover {
+    background-color: #f3f4f6;
+}
+
+/* Trust Image Container */
+.card-trust-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+@media (min-width: 640px) {
+    .card-trust-image-container {
+        width: 80%;
+    }
+}
+
+.card-trust-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    bottom: -40px;
+    left: -100px;
+    translate: 0 16px;
+}
+
+
+.why-choose-header {
+    @apply flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-10;
+}
+
+
+@media (max-width: 1023px) {
+    .header-left, .header-description {
+        text-align: left;
+        max-width: 100%;
+    }
+}
+
+
+.card-security-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.card-security-button {
+    background-color: white;
+    color: #1a1a1a;
+    @apply px-6 py-3 rounded-xl font-medium text-sm transition-all duration-300;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.card-security-button:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+
+.card-trust {
+    min-height: 350px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media (min-width: 1024px) {
+    .card-trust {
+        min-height: 500px;
+    }
+}
+
+.card-trust-image-wrapper {
+    position: absolute;
+    bottom: 55px;
+    right: -100px;
+    width: 70%; 
+    max-width: 400px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .card-trust-image-wrapper {
+        width: 60%;
+        bottom: -30px;
+    }
+}
+
+.card-trust-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.security-list-item, .trust-list-item {
+    @apply text-[13px] sm:text-[14px] md:text-[15px] leading-relaxed;
+}
+
+.trust-list {
+    max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .trust-list {
+        max-width: 80%; 
+    }
+}

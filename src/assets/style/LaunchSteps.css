@@ -1,0 +1,389 @@
+/* =============================
+   LaunchSteps Section
+   ============================= */
+
+.launch-section {
+    width: 100%;
+    background-color: #F2F3FA;
+    padding: 80px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.launch-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.launch-title {
+    color: #4A4A59;
+    text-align: center;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; 
+    @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] ;
+}
+
+
+.launch-title-muted {
+    color: #9898A7;
+    text-align: center;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; 
+    @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] ;
+}
+
+.launch-subtitle {
+    color: #4D96FF;
+    text-align: center;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]
+}
+
+/* Tabs */
+.launch-tabs {
+    border-radius: 99px;
+    border: 1px solid var(--Container-divider, rgba(0, 0, 0, 0.10));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.50) 100%);
+    padding: 2px;
+    border-radius: 999px;
+    display: flex;
+    @apply mb-[24px] sm:mb-[32px] md:mb-[36px] lg:mb-[40px] xl:mb-[48px] 2xl:mb-[56px];
+}
+
+.launch-tab-btn {
+    border-radius: 99px;
+    font-weight: 400;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #4A4A59;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    letter-spacing: -0.13px;
+    background: transparent;
+    border: 1px solid transparent;
+    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] px-[13px] sm:px-[14px] md:px-[15px] lg:px-[16px] xl:px-[20px] 2xl:px-[24px] py-[7px] sm:py-[9px] lg:py-[12px]
+}
+
+.launch-tab-btn--active {
+    border: 1px solid var(--Light-Mode-Container-Border, rgba(255, 255, 255, 0.10));
+    background: #FFF;
+    box-shadow: 0 1px 0 0 rgba(74, 74, 89, 0.05), 0 4px 4px 0 rgba(74, 74, 89, 0.05), 0 10px 10px 0 rgba(74, 74, 89, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+/* Main Card */
+.launch-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.launch-card-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    transition: opacity 0.3s ease;
+}
+
+.launch-card-bg--fade-in {
+    opacity: 1;
+}
+
+.launch-card-bg--fade-out {
+    opacity: 0;
+}
+
+/* Card Content */
+.launch-card-content {
+    position: relative;
+    z-index: 10;
+    padding: 32px;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.launch-card-title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; 
+    @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] mb-[5px] lg:mb-[8px];
+}
+
+.launch-br-md {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .launch-br-md {
+        display: block;
+    }
+}
+
+.launch-card-desc {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; 
+    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px];
+}
+
+/* Integration Panel */
+.launch-panel {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.50) 100%);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.5));
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 100%;
+    max-width: 440px;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.launch-panel--slide-in {
+    animation: slideFadeIn 0.4s ease 0.2s both;
+}
+
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.launch-panel-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* New Agent Button */
+.launch-new-agent {
+    color: #4A4A59;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.13px;
+    border-radius: 8px;
+    /* border: 1px solid #ffffff; */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.50) 100%);
+    backdrop-filter: blur(10px);
+    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] px-[13px] sm:px-[14px] md:px-[15px] lg:px-[16px] xl:px-[20px] 2xl:px-[24px] py-[7px] sm:py-[9px] lg:py-[12px];
+    transition: .2s;
+}
+
+.launch-new-agent:hover {
+    box-shadow: 0 222px 62px 0 rgba(74, 74, 89, 0.00), 0 142px 57px 0 rgba(74, 74, 89, 0.03), 0 80px 48px 0 rgba(74, 74, 89, 0.09), 0 35px 35px 0 rgba(74, 74, 89, 0.16), 0 9px 19px 0 rgba(74, 74, 89, 0.18);
+}
+
+.launch-new-agent-icon {
+    color: rgba(74, 74, 89, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.launch-new-agent-label {
+    color: rgba(74, 74, 89, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Integration List Items */
+.launch-integration-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    height: 53px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.launch-integration-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.launch-integration-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.launch-integration-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.launch-integration-name {
+    color: #4A4A59;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Bottom CTA */
+.launch-bottom {
+    margin-top: 56px;
+}
+
+.launch-cta-btn {
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(203, 203, 203, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.launch-cta-btn:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(203, 203, 203, 0.8);
+}
+
+/* ============================================================
+   Mobile Responsive
+   ============================================================ */
+
+   @media (max-width: 640px) {
+    /* Section Padding */
+    .launch-section {
+        padding: 40px 12px;
+    }
+
+    /* Title */
+    .launch-title, 
+    .launch-title-muted {
+        font-size: 24px !important;
+        line-height: 120%;
+        padding: 0 10px;
+    }
+
+    /* Subtitle  */
+    .launch-subtitle {
+        font-size: 13px !important;
+        margin-bottom: 8px;
+    }
+
+    /* Tabs */
+    .launch-tabs {
+        width: 100%;
+        max-width: 440px; 
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 24px !important;
+        scrollbar-width: none;
+    }
+    
+    .launch-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .launch-tab-btn {
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+    }
+
+    /* Card Layout  */
+    .launch-card {
+        border-radius: 16px;
+    }
+
+    .launch-card-content {
+        padding: 24px 16px;
+        margin: 12px;
+    }
+
+    .launch-card-title {
+        font-size: 18px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .launch-card-desc {
+        font-size: 13px !important;
+        line-height: 150%;
+        padding: 0 5px;
+    }
+
+    /* Integration Panel */
+    .launch-panel {
+        padding: 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .launch-new-agent {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .launch-integration-item {
+        padding: 10px 14px;
+        height: auto; 
+    }
+
+    .launch-integration-name {
+        font-size: 14px;
+    }
+
+    /* CTA Button for mobile */
+    .launch-bottom {
+        margin-top: 32px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .launch-cta-btn {
+        width: 90%; 
+        text-align: center;
+        padding: 12px 20px;
+    }
+}

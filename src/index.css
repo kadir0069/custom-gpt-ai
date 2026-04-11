@@ -1,0 +1,88 @@
+@import './assets/style/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background: #010214;
+  --foreground: #010214;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: "Geist", Arial, sans-serif;
+  --font-mono: monospace;
+}
+
+a {
+  scroll-behavior: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #010214;
+    --foreground: #010214;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: "Clash Grotesk Variable";
+  src: url("./assets/Fonts/ClashGrotesk-Semibold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Clash Grotesk Variable";
+  src: url("./assets/Fonts/ClashGrotesk-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("./assets/Fonts/Geist-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("./assets/Fonts/Geist-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("./assets/Fonts/Geist-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("./assets/Fonts/Geist-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+#smooth-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform;
+}
+
+
+/* My One */
+

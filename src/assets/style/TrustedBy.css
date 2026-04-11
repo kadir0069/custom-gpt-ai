@@ -1,0 +1,130 @@
+.trusted-by-section {
+    width: 100%;
+    background-color: white;
+    padding: 40px 16px;
+    overflow: hidden;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+
+.trusted-by-title {
+    color: #42424F;
+    text-align: center;
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: uppercase;
+    @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px];
+}
+
+
+.logo-slider-container {
+    position: relative;
+    display: flex;
+}
+
+.logo-slider-fade-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 64px;
+    background: linear-gradient(to right, white, transparent);
+    z-index: 10;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .logo-slider-fade-left {
+        width: 128px;
+    }
+}
+
+.logo-slider-fade-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 64px;
+    background: linear-gradient(to left, white, transparent);
+    z-index: 10;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .logo-slider-fade-right {
+        width: 128px;
+    }
+}
+
+.logo-slider-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .logo-slider-content {
+        gap: 24px;
+    }
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .logo-item {
+        gap: 24px;
+    }
+}
+
+.logo-image {
+    height: 27.788px;
+    width: auto;
+    max-width: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transition: all 300ms ease;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+@media (min-width: 768px) {
+    .logo-image {
+        height: 27.788px;
+        max-width: 100px;
+    }
+}
+
+.logo-image:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.logo-fallback {
+    color: #9ca3af;
+    font-weight: bold;
+}
+
+.logo-divider {
+    height: 16px;
+    width: 1px;
+    background-color: rgb(229, 231, 235, 0.6);
+}
+
+@media (min-width: 768px) {
+    .logo-divider {
+        height: 32px;
+    }
+}
